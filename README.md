@@ -19,6 +19,14 @@ Formula 1 Data Analysis project leveraging Spark on Azure Databricks and Delta L
 ## Data Model
 ![ergast_db](https://github.com/user-attachments/assets/07fcb8a7-e4f4-4f0d-a535-882918382abd)
 
+## Solution Architecture
+**Data Export**: Retrieve data from the Ergast website (Ergast.com).
+**Data Ingestion**: Manually load the data into the raw container of our Data Lake.
+**Data Processing**: Use Databricks notebooks to process and transform the data, applying the schema and storing it in columnar Parquet format in the ingested or processed layer.
+**Data Transformation**: Further transform the ingested data using additional Databricks notebooks, storing the processed results in the presentation layer.
+**Data Analysis**: Leverage Databricks notebooks to analyze the data and create dashboards, drawing from both the ingested and presentation layers to meet analysis requirements.
+**BI Reporting**: Develop and generate business intelligence (BI) reports.
+
 ## Tasks
 ### Data Ingestion
 - Ingest all 8 files into Azure Data Lake.
@@ -44,3 +52,12 @@ Formula 1 Data Analysis project leveraging Spark on Azure Databricks and Delta L
 
 ## Dominant Drivers Dashboard
 Link: https://adb-3243820008933182.2.azuredatabricks.net/editor/notebooks/110534886254747/dashboards/1d36c196-5e5e-4c97-a57a-0ca91019d2ba/present?o=3243820008933182
+![f1-drivers-1](https://github.com/user-attachments/assets/b2950b72-d7ae-45a3-8d86-6574d9df091b)
+![f1-drivers-2](https://github.com/user-attachments/assets/155a5786-54ce-40cc-94da-63b8ddd8400b)
+
+
+## Dominant Teams Dashboard
+Link: https://adb-3243820008933182.2.azuredatabricks.net/editor/notebooks/110534886254762/dashboards/239fee45-ef99-4c5e-935a-86b47d0827f1/present?o=3243820008933182
+![f1-teams-1](https://github.com/user-attachments/assets/f8060aec-03a1-4a9b-bd77-e47c01253f93)
+![f1-teams-2](https://github.com/user-attachments/assets/4f9b562d-3cbf-44bd-9403-b0626d1dcd3b)
+
