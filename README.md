@@ -16,6 +16,15 @@ Formula 1 Data Analysis project leveraging Spark on Azure Databricks and Delta L
 - Drivers make pit stops during the race for tire changes or to repair damaged cars.
 - Race results determine the standings for both drivers and constructors. The driver with the most points at the end of the season wins the Drivers' Championship, while the team with the highest points total is awarded the Constructors' Championship.
 
+## Technologies/Tools Used:
+- Pyspark
+- Spark SQL
+- Azure Delta Lake
+- Azure Databricks
+- Azure Date Lake Storage Gen2
+- Azure Key Fault
+- Power BI
+
 ## Data Model
 ![ergast_db](https://github.com/user-attachments/assets/07fcb8a7-e4f4-4f0d-a535-882918382abd)
 
