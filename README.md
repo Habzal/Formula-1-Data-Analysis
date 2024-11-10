@@ -20,14 +20,21 @@ Formula 1 Data Analysis project leveraging Spark on Azure Databricks and Delta L
 ![ergast_db](https://github.com/user-attachments/assets/07fcb8a7-e4f4-4f0d-a535-882918382abd)
 
 ## Solution Architecture
+
 **Data Export**: Retrieve data from the Ergast website (Ergast.com).
+
 **Data Ingestion**: Manually load the data into the raw container of our Data Lake.
+
 **Data Processing**: Use Databricks notebooks to process and transform the data, applying the schema and storing it in columnar Parquet format in the ingested or processed layer.
+
 **Data Transformation**: Further transform the ingested data using additional Databricks notebooks, storing the processed results in the presentation layer.
+
 **Data Analysis**: Leverage Databricks notebooks to analyze the data and create dashboards, drawing from both the ingested and presentation layers to meet analysis requirements.
+
 **BI Reporting**: Develop and generate business intelligence (BI) reports.
 
 ## Tasks
+
 ### Data Ingestion
 - Ingest all 8 files into Azure Data Lake.
 - Ensure the same schema is applied to all ingested data.
